@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayan LED Yazı Efekti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Önizleme Ekranı -->
+    <div class="preview-container">
+        <span class="preview-text">ESKA PLASTİK ve METAL GENEL YÖNETİM MÜDÜRÜ AYŞE DENİZ</span>
+    </div>
+
+    <!-- Yazı Kontrolleri -->
+    <div class="controls">
+        <label for="inputText">Yazı:</label>
+        <input type="text" id="inputText" placeholder="Kayan yazıyı buraya girin">
+        
+        <label for="textColor">Yazı Rengi:</label>
+        <input type="color" id="textColor" value="#FFA500">
+
+        <label for="bgColor">Arka Plan Rengi:</label>
+        <input type="color" id="bgColor" value="#000000">
+
+        <label for="fontSelect">Yazı Tipi:</label>
+        <select id="fontSelect">
+            <option value="Arial">Arial</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+        </select>
+
+        <label for="speed">Hız (sn):</label>
+        <input type="number" id="speed" min="1" max="20" value="10">
+        
+        <label for="direction">Yön:</label>
+        <select id="direction">
+            <option value="left">Sağdan Sola</option>
+            <option value="right">Soldan Sağa</option>
+        </select>
+
+        <button id="playButton">PLAY</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
